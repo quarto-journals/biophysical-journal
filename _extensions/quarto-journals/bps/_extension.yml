@@ -1,0 +1,19 @@
+title: Biophysicl Journal Template
+author: Jannik Buhr
+version: 0.1.0
+contributes:
+  format:
+    common:
+      # filters:
+      # shortcodes:
+      knitr:
+        opts_chunk:
+          echo: false
+    pdf:
+      biblio-style: biophysj.bst
+      classoption:
+        - twocolumn
+      template-partials:
+        - partials/doc-class.tex
+        - partials/title.tex
+    html: default
