@@ -19,13 +19,8 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage{microtype}
-\IfFileExists{newtxtext.sty}{%
-  \RequirePackage{newtxtext}
-  \RequirePackage{newtxmath}
-}{%
-  \RequirePackage{mathptmx}
-  \RequirePackage[scaled]{helvet}
-}
+\RequirePackage{mathptmx}
+\RequirePackage[scaled]{helvet}
 \RequirePackage{textcase}
 \RequirePackage{xcolor}
 \frenchspacing
