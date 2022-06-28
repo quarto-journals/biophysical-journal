@@ -66,6 +66,29 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \makeatletter
 \let\oldlt\longtable
@@ -184,7 +207,7 @@ have a statement of significance or no more than 120 words.
 \end{sigstatement}
 
 
-\end{frontmatter}\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, interior hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners, boxrule=0pt, enhanced]}{\end{tcolorbox}}\fi
+\end{frontmatter}\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, breakable, frame hidden]}{\end{tcolorbox}}\fi
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -196,6 +219,8 @@ Your introduction goes here! Some examples of commonly used commands and
 features are listed below, to help you get started. Leave a blank line
 between blocks of text to start a new paragraph. Abbreviations should be
 defined in the text at first mention.
+
+We are using (1).
 
 Please also take note of the \texttt{\textbackslash{}section*\{...\}}
 titles in this template: they are the required sections in a regular
@@ -227,29 +252,10 @@ Capitalize trade names and give manufacturers' full names and addresses
 Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
 cillum sint consectetur cupidatat.
 
-\hypertarget{figures-and-tables}{%
-\subsection{Figures and Tables}\label{figures-and-tables}}
-
-\hypertarget{tbl-numbers}{}
-\begin{longtable}[]{@{}lr@{}}
-\caption{\label{tbl-numbers}Look, numbers!}\tabularnewline
-\toprule()
-Thing & Value \\
-\midrule()
-\endfirsthead
-\toprule()
-Thing & Value \\
-\midrule()
-\endhead
-A 42 & 18 \\
-B 15 & 18 \\
-C 34 & 17 \\
-D 99 & 24 \\
-\bottomrule()
-\end{longtable}
-
 \hypertarget{results}{%
 \section{Results}\label{results}}
+
+See Table~\ref{tbl-numbers}.
 
 LaTeX is great at typesetting mathematics:
 
@@ -306,6 +312,30 @@ veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 commodo consequat.
 \end{quote}
 
+\hypertarget{figures-and-tables}{%
+\subsection{Figures and Tables}\label{figures-and-tables}}
+
+Here is a table (or not, this is LaTeX, so it will put it wherever it
+wants. ``Here'' is very relative\ldots).
+
+\hypertarget{tbl-numbers}{}
+\begin{longtable}[]{@{}lr@{}}
+\caption{\label{tbl-numbers}Look, numbers!}\tabularnewline
+\toprule()
+Thing & Value \\
+\midrule()
+\endfirsthead
+\toprule()
+Thing & Value \\
+\midrule()
+\endhead
+A 42 & 18 \\
+B 15 & 18 \\
+C 34 & 17 \\
+D 99 & 24 \\
+\bottomrule()
+\end{longtable}
+
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
@@ -330,6 +360,18 @@ analyzed the data. Author1 and Author2 wrote the article.
 \section{Acknowledgments}\label{acknowledgments}}
 
 We thank G. Harrison, B. Harper, and J. Doe for their help.
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-quarto}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Allaire, J.J., C. Teague, C. Scheidegger, Y. Xie, and C.
+Dervieux. 2022. \href{https://doi.org/10.5281/zenodo.5960048}{Quarto}.}
+
+\end{CSLReferences}
 
 \hypertarget{supplementary-material}{%
 \section{Supplementary Material}\label{supplementary-material}}

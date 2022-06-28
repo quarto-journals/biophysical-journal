@@ -17,10 +17,10 @@ author:
   - name: John Doe
     affiliations:
       - ref: some-inst
-github: https://github.com/jmbuhr/
-repo: bps-quarto-format
+github: https://github.com/quarto-journals/
+repo: biophysical-journal
 format:
-  quarto-journals/bps-pdf:
+  quarto-journals/bj-pdf:
     classoption:
       - twocolumn
 colorlinks: true
@@ -52,8 +52,12 @@ Some examples of commonly used commands and features are listed below, to help y
 Leave a blank line between blocks of text to start a new paragraph.
 Abbreviations should be defined in the text at first mention.
 
+We are using [@quarto].
+
 Please also take note of the `\section*{...}` titles in this template:
 they are the required sections in a regular research Article manuscript.
+
+
 
 In particular, the main text of regular Articles and Computational Tools manuscripts must be structured with the following sections:
 **Introduction**, **Materials and Methods**, **Results**, **Discussion
@@ -75,18 +79,11 @@ Capitalize trade names and give manufacturers' full names and addresses
 
 Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
 
-## Figures and Tables
-
-Table: Look, numbers! {#tbl-numbers}
-
-|Thing   | Value  |
-|:-------|-------:|
-|A 42    |      18|
-|B 15    |      18|
-|C 34    |      17|
-|D 99    |      24|
 
 # Results
+
+
+See @tbl-numbers.
 
 LaTeX is great at typesetting mathematics:
 
@@ -135,6 +132,19 @@ An example quotation:
 > minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 > aliquip ex ea commodo consequat.
 
+## Figures and Tables
+
+Here is a table (or not, this is LaTeX, so it will put it wherever it wants. "Here" is very relative...).
+
+|Thing   | Value  |
+|:-------|-------:|
+|A 42    |      18|
+|B 15    |      18|
+|C 34    |      17|
+|D 99    |      24|
+
+: Look, numbers! {#tbl-numbers}
+
 # Discussion
 
 Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
@@ -155,8 +165,16 @@ analyzed the data. Author1 and Author2 wrote the article.
 
 We thank G. Harrison, B. Harper, and J. Doe for their help.
 
+
+
+# References
+
+:::{#refs}
+:::
+
 # Supplementary Material
 
 An online supplement to this article can be found by visiting BJ Online
 at <http://www.biophysj.org>.
+
 
