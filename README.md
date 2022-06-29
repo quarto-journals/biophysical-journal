@@ -1,5 +1,7 @@
 # Biophysicl Journal (BJ) Template
 
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+
 Use with quarto to create a manuscript suitable for submitting to the biophysical journal: <https://www.cell.com/biophysj/author-resources>
 
 This is based on the BJ Overleaf template
