@@ -25,3 +25,7 @@ Or use the complete template:
 quarto use template quarto-journals/biophysical-journal
 ```
 
+## Screenshot of the rendered template
+
+![Screenshot](./style-guide/screenshot.png) 
+
