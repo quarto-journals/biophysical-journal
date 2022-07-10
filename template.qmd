@@ -20,14 +20,14 @@ author:
 github: https://github.com/quarto-journals/
 repo: biophysical-journal
 format:
-  quarto-journals/bj-pdf:
+  bj-pdf:
     classoption:
       - twocolumn
 colorlinks: true
 keep-tex: true
 abstract: |
   TODO
-  Look at all the cool suff we found out!
+  Look at all the cool stuff we found out!
 sigstatement: |
   TODO
   This is very important, because...

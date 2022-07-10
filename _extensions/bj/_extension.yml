@@ -13,5 +13,8 @@ contributes:
         - ./partials/doc-class.tex
         - ./partials/title.tex
         - ./partials/before-body.tex
+      format-resources:
+        - ./biophysical-journal.csl
+        - ./biophys-new-mod.cls
       include-in-header:
         - include-in-header.tex # enable `longtable` in twocolumn mode
