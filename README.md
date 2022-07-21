@@ -1,33 +1,39 @@
-# Biophysical Journal (BJ) Template
+# Biophysical Journal (BJ)
 
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+This Quarto format will help you create documents for the Biophysical journal. To learn more about biophysical journal, see [biophysj's Information for Authors page](https://www.cell.com/biophysj/author-resources). For more about Quarto and how to use format extensions, see <https://quarto.org/docs/journals/>.
 
-Use with quarto to create a manuscript suitable for submitting to the biophysical journal: <https://www.cell.com/biophysj/author-resources>
 
-This is based on the BJ Overleaf template
-<https://www.overleaf.com/articles/biophysical%E2%80%90journaltemplate/pxxcptphxdhv>
+This is based on the BJ Overleaf template <https://www.overleaf.com/articles/biophysical%E2%80%90journaltemplate/pxxcptphxdhv>
 
 The LaTeX `.cls` was only changed in one place, to remove math packages as those are already handled by quarto/pandoc.
 
-## Installation
+## Creating a New Article
 
-```bash
-quarto install extension quarto-journals/biophysical-journal
-```
+You can use this as a template to create an article for the Journal of Statistical Software. To do this, use the following command:
 
-And then set
+```quarto use template quarto-journals/biophysical-journal```
+
+This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
+
+## Installation For Existing Document
+
+You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
+
+```quarto install extension quarto-journals/biophysical-journal```
+
+## Usage 
+
+To use the format, you can use the format names `bj-pdf` and `bj-html`. For example:
+
+```quarto render article.qmd --to bj-pdf```
+
+or in your document yaml
 
 ```yaml
-format: quarto-journals/bj-pdf
+format:
+  pdf: default
+  bj-pdf:
+    keep-tex: true    
 ```
 
-Or use the complete template:
-
-```bash
-quarto use template quarto-journals/biophysical-journal
-```
-
-## Screenshot of the rendered template
-
-![Screenshot](./style-guide/screenshot.png) 
-
+You can view a preview of the rendered template at <https://quarto-journals.github.io/biophysical-journal/>.
