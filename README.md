@@ -39,4 +39,4 @@ format:
     keep-tex: true    
 ```
 
-You can view a preview of the rendered template at <https://quarto-journals.github.io/bj/>.
+You can view a preview of the rendered template at <https://quarto-journals.github.io/biophysical-journal/>.
