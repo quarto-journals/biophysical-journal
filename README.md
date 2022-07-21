@@ -1,8 +1,5 @@
 # Biophysical Journal (BJ)
 
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-
-
 This Quarto format will help you create documents for the Biophysical journal. To learn more about biophysical journal, see [biophysj's Information for Authors page](https://www.cell.com/biophysj/author-resources). For more about Quarto and how to use format extensions, see <https://quarto.org/docs/journals/>.
 
 
