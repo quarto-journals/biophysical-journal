@@ -4,16 +4,16 @@ date: today
 date-format: long
 author:
   - name: Jane Doe
-    url: https://jmbuhr.de
+    url: https://example.com
     orcid: 0000-0000-0000-0000
     affiliations:
       - id: some-inst
         name: Institute for Cool Things
-        url: some url
+        url: https://example.com
       - id: some-uni
         name: University of Awesome Research
-        url: some url
-    email: correspondign email
+        url: https://example.com
+    email: corresponding email
   - name: John Doe
     affiliations:
       - ref: some-inst
@@ -57,8 +57,6 @@ We are using [@quarto].
 Please also take note of the `\section*{...}` titles in this template:
 they are the required sections in a regular research Article manuscript.
 
-
-
 In particular, the main text of regular Articles and Computational Tools manuscripts must be structured with the following sections:
 **Introduction**, **Materials and Methods**, **Results**, **Discussion
 (or Results and Discussion)**, **Conclusion**.
@@ -79,9 +77,7 @@ Capitalize trade names and give manufacturers' full names and addresses
 
 Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
 
-
 # Results
-
 
 See @tbl-numbers.
 
@@ -102,13 +98,11 @@ Thus concludes the explanation about @eq-clt.
 You can make lists with automatic numbering ...
 
 1.  Like this,
-
 2.  and like this.
 
 ...or bullet points ...
 
 -   Like this,
-
 -   and like this.
 
 ...or with words and descriptions ...
