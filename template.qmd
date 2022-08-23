@@ -24,6 +24,7 @@ format:
     classoption:
       - twocolumn
 colorlinks: true
+link-citations: true
 keep-tex: true
 abstract: |
   TODO
