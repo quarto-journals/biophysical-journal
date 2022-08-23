@@ -52,7 +52,7 @@ Some examples of commonly used commands and features are listed below, to help y
 Leave a blank line between blocks of text to start a new paragraph.
 Abbreviations should be defined in the text at first mention.
 
-We are using [@quarto].
+We are using quarto [@quarto].
 
 Please also take note of the `\section*{...}` titles in this template:
 they are the required sections in a regular research Article manuscript.
