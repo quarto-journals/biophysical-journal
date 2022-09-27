@@ -1,6 +1,6 @@
 # Biophysical Journal (BJ)
 
-This Quarto format will help you create documents for the Biophysical journal. To learn more about biophysical journal, see [biophysj's Information for Authors page](https://www.cell.com/biophysj/author-resources). For more about Quarto and how to use format extensions, see <https://quarto.org/docs/journals/>.
+This Quarto format will help you create documents for the Biophysical Journal. To learn more about biophysical journal, see [biophysj's Information for Authors page](https://www.cell.com/biophysj/author-resources). For more about Quarto and how to use format extensions, see <https://quarto.org/docs/journals/>.
 
 
 This is based on the BJ Overleaf template <https://www.overleaf.com/articles/biophysical%E2%80%90journaltemplate/pxxcptphxdhv>
@@ -9,7 +9,7 @@ The LaTeX `.cls` was only changed in one place, to remove math packages as those
 
 ## Creating a New Article
 
-You can use this as a template to create an article for the Journal of Statistical Software. To do this, use the following command:
+You can use this as a template to create an article for the Biophysical Journal. To do this, use the following command:
 
 ```quarto use template quarto-journals/biophysical-journal```
 
