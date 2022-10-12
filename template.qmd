@@ -156,11 +156,13 @@ explicabo.
 Author1 designed the research. Author2 carried out all simulations,
 analyzed the data. Author1 and Author2 wrote the article.
 
+# Declaration of Interest
+
+The authors declare no competing interests.
+
 # Acknowledgments
 
 We thank G. Harrison, B. Harper, and J. Doe for their help.
-
-
 
 # References
 
